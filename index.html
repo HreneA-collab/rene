@@ -1,67 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--
-This code lines are for the title of the page.
--->
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rene Hernandez Ambriz | Resume</title>
-<!--
-This code lines are for the backgroubd color of the tittle.
--->
-<style>
+    <!-- Character Encoding & Compatibility -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+    <!-- Mobile Responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title & SEO -->
+    <title>Rene Hernandez Ambriz | Resume</title>
+    <meta name="description" content="Rene Hernandez Ambriz – Developer, Designer, Science-Driven Problem Solver. Resume and portfolio showcasing projects, skills, and experience.">
+    <meta name="author" content="Rene Hernandez Ambriz">
+
+    <!-- Social Sharing: Open Graph / Facebook -->
+    <meta property="og:title" content="Rene Hernandez Ambriz | Resume">
+    <meta property="og:description" content="Resume and portfolio of Rene Hernandez Ambriz – Developer, Designer, Problem Solver.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.yourwebsite.com/">
+    <meta property="og:image" content="https://www.yourwebsite.com/images/portfolio-preview.png">
+
+    <!-- Social Sharing: Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rene Hernandez Ambriz | Resume">
+    <meta name="twitter:description" content="Resume and portfolio of Rene Hernandez Ambriz – Developer, Designer, Problem Solver.">
+    <meta name="twitter:image" content="https://www.yourwebsite.com/images/portfolio-preview.png">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- Styles -->
+    <style>
     body{
-        font-family: Arial;
+        font-family: Arial, sans-serif;
         margin:0;
         background:#f4f4f4;
-}
-    @keyframes colorLoop {
+    }
 
-        0% {background-color:#1F3A5F;}/* Color (Deep Slate Blue): Primary Accent & Modernity. Used for subheaders or card backgrounds to bridge the gap between navy and charcoal. */
-        20% {background-color:#2B2B2B;}/* Color (Professional Charcoal): Text and secondary element color. */
-        40% {background-color:#003366;}/* Color (Midnight Navy) - Used for headers, primary navigation, or strong text (Trust & Authority). */
-        60% {background-color:#36454F ;}/* Color (Charcoal Blue) - Used for secondary text or subheaders (Modern Professionalism). */
-        60% {background-color:#4682B4;}/* Color (Steel Blue) - Used for links, active states, or accent buttons (Reliability). */
-        80% {background-color:#66CDAA;}/* Color (Medium Aquamarine) - Used as a high-contrast accent for Call-to-Action (CTA) buttons (Growth & Action)*/
-        100% {background-color:#1f2937;}/* Color (Cool Gray-Navy): Strong, dark background or header color.*/
-}
+    @keyframes colorLoop {
+        0% {background-color:#1F3A5F;}
+        20% {background-color:#2B2B2B;}
+        40% {background-color:#003366;}
+        60% {background-color:#36454F;}
+        70% {background-color:#4682B4;}
+        80% {background-color:#66CDAA;}
+        100% {background-color:#1f2937;}
+    }
+
     header{
         background:#1f2937;
         color:white;
         text-align:center;
         padding:40px;
         animation: colorLoop 20s infinite;
+    }
 
-}
     nav {
-        font-family: Arial, sans-serif; 
-        font-size: 20px; 
+        font-family: Arial, sans-serif;
+        font-size: 20px;
         background-color: #374151;
         text-align: center;
         padding: 10px;
-}
+    }
+
     nav a {
         color: white;
         text-decoration: none;
         margin: 0 10px;
-}
-    
+    }
+
     h1{
-        font-size:50px;
+        font-size:80px;
         margin:0;
-}
+    }
 
     h2{
         color:#1e3a8a;
-}
+    }
 
     .container{
         width:80%;
         margin:auto;
         padding:20px;
-}
+    }
 
     .section{
         background:white;
@@ -69,36 +90,30 @@ This code lines are for the backgroubd color of the tittle.
         margin-top:20px;
         border-radius:8px;
         box-shadow:0 0 10px rgba(0,0,0,0.1);
-}
+    }
 
     ul{
         line-height:1.8;
-}
+    }
 
     .footer{
         text-align:center;
         padding:20px;
         color:gray;
-}
-
-</style>
-
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
-    <!--
-This code lines are for the picture that appears on the header top left.
--->  
-<h1 style="font-size:80px;">
- <img src="ScreenShoot2.png" width="120 "style="float:left;">
-Rene Hernandez Ambriz
-</h1>
-  
-<p>Developer | Designer | Science-Driven Problem Solver </p>
+    <h1>
+        <img src="ScreenShoot2.png" width="120" style="float:left;">
+        Rene Hernandez Ambriz
+    </h1>
+    <p>Developer | Designer | Science-Driven Problem Solver</p>
+</header>
 
-</header>  
 <nav>
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
@@ -107,135 +122,98 @@ Rene Hernandez Ambriz
     <a href="#licenses">Licenses</a>
     <a href="#contact">Contact</a>
 </nav>
-<br>    
-  <!--
-The following lines of code are for the linkedin and facebook pages icons that appear on the top right after the header.
--->
-<div style="display:flex; justify-content:flex-end; gap:10px;">
-    <a href="https://www.linkedin.com/in/rene-hernandez-a-" target="_blank" style="float:right;">
+
+<!-- Social Icons Top Right -->
+<div style="display:flex; justify-content:flex-end; gap:10px; margin:10px 0;">
+    <a href="https://www.linkedin.com/in/rene-hernandez-a-" target="_blank">
         <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="40">
-        </a>
-    <a href="https://www.facebook.com/rene.herna.a" target="_blank" style="float:right;">
+    </a>
+    <a href="https://www.facebook.com/rene.herna.a" target="_blank">
         <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" width="40">
-        </a>
-    <a href="https://www.instagram.com/w.wh.w/" target="_blank" style="float:right;">
+    </a>
+    <a href="https://www.instagram.com/w.wh.w/" target="_blank">
         <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="40">
-        </a>   
-        
-    <a href="https://www.threads.net/@w.wh.w" target="_blank" style="float:right;" >
+    </a>
+    <a href="https://www.threads.net/@w.wh.w" target="_blank">
         <img src="https://cdn-icons-png.flaticon.com/512/5968/5968964.png" alt="Threads" width="40">
-        </a>    
-    <a href="https://www.pinterest.com/reneh1571" target="_blank" style="float:right; margin-right:145px;" >
+    </a>
+    <a href="https://www.pinterest.com/reneh1571" target="_blank"  style="float:right; margin-right:145px;"    >
         <img src="https://cdn-icons-png.flaticon.com/512/145/145808.png" alt="Pinterest" width="40">
-        </a>    
-
-    
+    </a>
 </div>
+
 <div class="container">
-    <section id="about">
-        <div class="section">
-                <h2>About Me</h2>
-                <p> //Note: Projects. 
-                    Example: 
-                    Professional contractor with strong analytical skills and a background in mathematics and physics.
-                    Experienced in construction planning, project execution, and problem solving.
-                </p>
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            Professional contractor with strong analytical skills and a background in mathematics and physics.
+            Experienced in construction planning, project execution, and problem solving.
+        </p>
+    </section>
 
-        </div>
-    <section>
-<div class="section">
-    <section id="projects">
-                <h2>Projects</h2>
-                <p> //Note: Project list goes here. 
-                    Example: 
-                </p>
-                <ul>
-                    <li>Project 1</li>
-                    <li>Project 2</li>    
-                    <li>Project 3 etc.</li>
-                <ul>   
-     <projects>               
-</div>
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <ul>
+            <li>Project 1</li>
+            <li>Project 2</li>
+            <li>Project 3 etc.</li>
+        </ul>
+    </section>
 
-    <div class="section">
-        <section id="skills">
-                <h2>Skills</h2>
-                <p> //Note: Think about the many skills that you have.
-                    Example
-                </p>
-                <ul>
-                    <li>Construction Project Management</li>
-                    <li>Roofing and Structural Work</li>
-                    <li>Mathematics and Analytical Thinking</li>
-                    <li>Basic Programming (Java, C++)</li>
-                    <li>Problem Solving and Engineering Thinking</li>
-                    <li>Bilingual: English/Spanish </li>
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <ul>
+            <li>Construction Project Management</li>
+            <li>Roofing and Structural Work</li>
+            <li>Mathematics and Analytical Thinking</li>
+            <li>Basic Programming (Java, C++)</li>
+            <li>Problem Solving and Engineering Thinking</li>
+            <li>Bilingual: English/Spanish</li>
+        </ul>
+    </section>
 
-                </ul>
-        <section>
-    </div>
+    <section id="education" class="section">
+        <h2>Education</h2>
+        <ul>
+            <li>Bachelor of Science in Pure Mathematics / University of California Davis</li>
+            <li>Associate of Science in Physics / College of San Mateo, Skyline College</li>
+            <li>Associate of Science in Mathematics / College of San Mateo, Skyline College</li>
+            <li>College IGETC (Intersegmental General Education Transfer Curriculum)</li>
+            <li>College GE (General Education)</li>
+        </ul>
+    </section>
 
-    <div class="section">
-          <section id="education">          
-                <h2>Education</h2>
+    <section id="licenses" class="section">
+        <h2>Licenses</h2>
+        <ul>
+            <li>#### ###</li>
+        </ul>
+    </section>
 
-                <ul>
-                    <li>Bachelor of Science in Pure Mathematics/ University of California Davis</li>
-                    <li>Associate of Science in Physics/ College of San Mateo, Skyline College</li>
-                    <li>Associate of Science in Mathematics/ College of San Mateo, Skyline College</li>
-                    <li>College IGETC (Intersegmental General Education Transfer Curriculum) </li>
-                    <li>College GE (General Education) </li>
-
-                </ul>
-        <section>
-    </div>
-
-    <div class="section">
-        <section id="licenses">
-                    <h2>Licenses</h2>
-
-                    <ul>
-                        <li>#### ###</li>
-                    </ul>
-        <section>
-    </div>
-
-    <div class="section">
-        <section id="contact">
-                    <h2>Contact</h2>
-
-                    <p>Email: your@email.com</p>
-                    <p>Phone: (000) 000-0000</p>
-        <section>
-    </div>
-
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Email: your@email.com</p>
+        <p>Phone: (000) 000-0000</p>
+    </section>
 </div>
 
 <div class="footer">
-
-<p>© 2026 Rene Hernandez</p>
-<!--
-This lines of code are for the linkedin and facebook icons on that appear on the bottom of the page.
--->  
-<a href="https://www.linkedin.com/in/rene-hernandez-a-" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="40">
-</a>
-<a href="https://www.facebook.com/rene.herna.a" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" width="40">
-</a> 
-<a href="https://www.instagram.com/w.wh.w/" target="_blank">
-  <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="40">
-</a>
-
-
-<a href="https://www.threads.net/@w.wh.w" target="_blank">
-  <img src="https://cdn-icons-png.flaticon.com/512/5968/5968964.png" alt="Threads" width="40">
-</a>
-<a href="https://www.pinterest.com/reneh1571" target="_blank" >
-    <img src="https://cdn-icons-png.flaticon.com/512/145/145808.png" alt="Pinterest" width="40">
-</a>    
+    <p>© 2026 Rene Hernandez</p>
+    <a href="https://www.linkedin.com/in/rene-hernandez-a-" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="40">
+    </a>
+    <a href="https://www.facebook.com/rene.herna.a" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" width="40">
+    </a>
+    <a href="https://www.instagram.com/w.wh.w/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="40">
+    </a>
+    <a href="https://www.threads.net/@w.wh.w" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968964.png" alt="Threads" width="40">
+    </a>
+    <a href="https://www.pinterest.com/reneh1571" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/145/145808.png" alt="Pinterest" width="40">
+    </a>
 </div>
 
 </body>
-</html>
-
