@@ -37,47 +37,78 @@
         background:#f4f4f4;
     }
 
-    @keyframes colorLoop {
-        0% {background-color:#1F3A5F;}
-        20% {background-color:#2B2B2B;}
-        40% {background-color:#003366;}
-        60% {background-color:#36454F;}
-        70% {background-color:#4682B4;}
-        80% {background-color:#66CDAA;}
-        100% {background-color:#1f2937;}
-    }
-
-    header{
-        background:#1f2937;
-        color:white;
-        text-align:center;
-        padding:40px;
-        animation: colorLoop 20s infinite;
-    }
-
-    nav {
-        font-family: Arial, sans-serif;
-        font-size: 20px;
-        background-color: #374151;
-        text-align: center;
-        padding: 10px;
-    }
-
-    nav a {
+    /* Header with shining color loop */
+    .site-header {
+        background: linear-gradient(270deg,
+            #1F3A5F, #2B2B2B, #003366, #36454F, #4682B4, #66CDAA, #1f2937
+        );
+        background-size: 1400% 1400%;
+        animation: gradientShift 30s ease infinite;
         color: white;
-        text-decoration: none;
-        margin: 0 10px;
+        padding: 40px 20px;
     }
 
-    h1{
-        font-size:80px;
-        margin:0;
+    @keyframes gradientShift {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
     }
 
-    h2{
-        color:#1e3a8a;
+    /* Header layout */
+    .header-content {
+        display: flex;
+        align-items: center;
+        max-width: 1200px;
+        margin: auto;
     }
 
+    .header-logo {
+        width: 120px;
+        margin-right: 20px;
+        border-radius: 10px;
+    }
+
+    .header-text h1 {
+        margin: 0;
+        font-size: 48px;
+    }
+
+    .header-text p {
+        margin: 5px 0 0 0;
+        font-size: 18px;
+        color: #E0E0E0;
+    }
+
+/* Nav gradient animation (independent) */
+nav {
+    font-size: 20px;
+    background: linear-gradient(270deg,
+        #1F3A5F, #2B2B2B, #003366, #36454F, #4682B4, #66CDAA, #1f2937
+    );
+    background-size: 1400% 1400%;
+    animation: navGradient 45s ease infinite; /* different duration */
+    text-align: center;
+    padding: 10px;
+}
+
+@keyframes navGradient {
+    0% { background-position: 100% 50%; } /* start opposite direction */
+    50% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #FFD700;
+}
+
+    /* Main content */
     .container{
         width:80%;
         margin:auto;
@@ -101,17 +132,49 @@
         padding:20px;
         color:gray;
     }
+
+    /* Social Icons Flexbox Top & Bottom */
+    .social-icons {
+        display:flex;
+        justify-content:flex-end;
+        gap:10px;
+        margin:10px 0;
+    }
+
+    /* Mobile-friendly header */
+    @media (max-width: 768px) {
+        .header-content {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .header-logo {
+            margin: 0 0 15px 0;
+            width: 100px;
+        }
+
+        .header-text h1 {
+            font-size: 32px;
+        }
+
+        .header-text p {
+            font-size: 16px;
+        }
+    }
   </style>
 </head>
 
 <body>
 
-<header>
-    <h1>
-        <img src="ScreenShoot2.png" width="120" style="float:left;">
-        Rene Hernandez Ambriz
-    </h1>
-    <p>Developer | Designer | Science-Driven Problem Solver</p>
+<header class="site-header">
+    <div class="header-content">
+        <img src="ScreenShoot2.png" alt="Rene Hernandez Ambriz" class="header-logo">
+        <div class="header-text">
+            <h1>Rene Hernandez Ambriz</h1>
+            <p>Developer | Designer | Science-Driven Problem Solver</p>
+        </div>
+    </div>
 </header>
 
 <nav>
@@ -124,7 +187,7 @@
 </nav>
 
 <!-- Social Icons Top Right -->
-<div style="display:flex; justify-content:flex-end; gap:10px; margin:10px 0;">
+<div class="social-icons">
     <a href="https://www.linkedin.com/in/rene-hernandez-a-" target="_blank">
         <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="40">
     </a>
@@ -137,7 +200,7 @@
     <a href="https://www.threads.net/@w.wh.w" target="_blank">
         <img src="https://cdn-icons-png.flaticon.com/512/5968/5968964.png" alt="Threads" width="40">
     </a>
-    <a href="https://www.pinterest.com/reneh1571" target="_blank"  style="float:right; margin-right:145px;"    >
+    <a href="https://www.pinterest.com/reneh1571" target="_blank">
         <img src="https://cdn-icons-png.flaticon.com/512/145/145808.png" alt="Pinterest" width="40">
     </a>
 </div>
@@ -199,21 +262,24 @@
 
 <div class="footer">
     <p>© 2026 Rene Hernandez</p>
-    <a href="https://www.linkedin.com/in/rene-hernandez-a-" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="40">
-    </a>
-    <a href="https://www.facebook.com/rene.herna.a" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" width="40">
-    </a>
-    <a href="https://www.instagram.com/w.wh.w/" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="40">
-    </a>
-    <a href="https://www.threads.net/@w.wh.w" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968964.png" alt="Threads" width="40">
-    </a>
-    <a href="https://www.pinterest.com/reneh1571" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/145/145808.png" alt="Pinterest" width="40">
-    </a>
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/rene-hernandez-a-" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="40">
+        </a>
+        <a href="https://www.facebook.com/rene.herna.a" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" width="40">
+        </a>
+        <a href="https://www.instagram.com/w.wh.w/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="40">
+        </a>
+        <a href="https://www.threads.net/@w.wh.w" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968964.png" alt="Threads" width="40">
+        </a>
+        <a href="https://www.pinterest.com/reneh1571" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/145/145808.png" alt="Pinterest" width="40">
+        </a>
+    </div>
 </div>
 
 </body>
+</html>
