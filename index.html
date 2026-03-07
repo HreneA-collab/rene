@@ -10,61 +10,73 @@ This code lines are for the backgroubd color of the tittle.
 -->
 <style>
 
-body{
-font-family: Arial;
-margin:0;
-background:#f4f4f4;
+    body{
+        font-family: Arial;
+        margin:0;
+        background:#f4f4f4;
 }
-header{
-background:#1f2937;
-color:white;
-text-align:center;
-padding:40px;
+/* Color loop function goes here */
+@keyframes colorLoop {
+
+0% {background-color:#1F3A5F;}/* Color (Deep Slate Blue): Primary Accent & Modernity. Used for subheaders or card backgrounds to bridge the gap between navy and charcoal. */
+20% {background-color:#2B2B2B;}/* Color (Professional Charcoal): Text and secondary element color. */
+40% {background-color:#003366;}/* Color (Midnight Navy) - Used for headers, primary navigation, or strong text (Trust & Authority). */
+60% {background-color:#36454F ;}/* Color (Charcoal Blue) - Used for secondary text or subheaders (Modern Professionalism). */
+60% {background-color:#4682B4;}/* Color (Steel Blue) - Used for links, active states, or accent buttons (Reliability). */
+80% {background-color:#66CDAA;}/* Color (Medium Aquamarine) - Used as a high-contrast accent for Call-to-Action (CTA) buttons (Growth & Action)*/
+100% {background-color:#1f2937;}/* Color (Cool Gray-Navy): Strong, dark background or header color.*/    
+    header{
+        background:#1f2937;
+        color:white;
+        text-align:center;
+        padding:40px;
+        animation: colorLoop 12s infinite;
+
 }
-nav {
-    font-family: Arial, sans-serif; 
-    font-size: 20px; 
-    background-color: #374151;
-    text-align: center;
-    padding: 10px;
+    nav {
+        font-family: Arial, sans-serif; 
+        font-size: 20px; 
+        background-color: #374151;
+        text-align: center;
+        padding: 10px;
 }
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
 }
     
-h1{
-font-size:50px;
-margin:0;
+    h1{
+        font-size:50px;
+        margin:0;
 }
 
-h2{
-color:#1e3a8a;
+    h2{
+        color:#1e3a8a;
 }
 
-.container{
-width:80%;
-margin:auto;
-padding:20px;
+    .container{
+        width:80%;
+        margin:auto;
+        padding:20px;
 }
 
-.section{
-background:white;
-padding:25px;
-margin-top:20px;
-border-radius:8px;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
+    .section{
+        background:white;
+        padding:25px;
+        margin-top:20px;
+        border-radius:8px;
+        box-shadow:0 0 10px rgba(0,0,0,0.1);
 }
 
-ul{
-line-height:1.8;
+    ul{
+        line-height:1.8;
 }
 
-.footer{
-text-align:center;
-padding:20px;
-color:gray;
+    .footer{
+        text-align:center;
+        padding:20px;
+        color:gray;
 }
 
 </style>
