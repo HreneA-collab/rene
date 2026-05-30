@@ -1,1 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character Encoding & Compatibility -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+    <!-- Mobile Responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title & SEO -->
+    <title>Rene Hernandez Ambriz | Resume</title>
+    <meta name="description" content="Rene Hernandez Ambriz – Developer, Designer, Science-Driven Problem Solver. Resume and portfolio showcasing projects, skills, and experience.">
+    <meta name="author" content="Rene Hernandez Ambriz">
+
+    <!-- Social Sharing: Open Graph / Facebook -->
+    <meta property="og:title" content="Rene Hernandez Ambriz | Resume">
+    <meta property="og:description" content="Resume and portfolio of Rene Hernandez Ambriz – Developer, Designer, Problem Solver.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.yourwebsite.com/">
+    <meta property="og:image" content="https://www.yourwebsite.com/images/portfolio-preview.png">
+
+    <!-- Social Sharing: Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rene Hernandez Ambriz | Resume">
+    <meta name="twitter:description" content="Resume and portfolio of Rene Hernandez Ambriz – Developer, Designer, Problem Solver.">
+    <meta name="twitter:image" content="https://www.yourwebsite.com/images/portfolio-preview.png">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- Styles -->
+    <style>
+    body{
+        font-family: Arial, sans-serif;
+        margin:0;
+        background:#f4f4f4;
+    }
+
+    /* Header with shining color loop */
+    .site-header {
+        background: linear-gradient(270deg,
+            #1F3A5F, #2B2B2B, #003366, #36454F, #4682B4, #66CDAA, #1f2937
+        );
+        background-size: 1400% 1400%;
+        animation: gradientShift 30s ease infinite;
+        color: white;
+        padding: 40px 20px;
+    }
+
+    @keyframes gradientShift {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    /* Header layout */
+    .header-content {
+        display: flex;
+        align-items: center;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .header-logo {
+        width: 120px;
+        margin-right: 20px;
+        border-radius: 10px;
+    }
+
+    .header-text h1 {
+        margin: 0;
+        font-size: 48px;
+    }
+
+    .header-text p {
+        margin: 5px 0 0 0;
+        font-size: 18px;
+        color: #E0E0E0;
+    }
+
+/* Nav gradient animation (independent) */
+nav {
+    font-size: 20px;
+    background: linear-gradient(270deg,
+        #1F3A5F, #2B2B2B, #003366, #36454F, #4682B4, #66CDAA, #1f2937
+    );
+    background-size: 1400% 1400%;
+    animation: navGradient 20s ease infinite; /* different duration */
+    text-align: center;
+    padding: 10px;
+}
+
+@keyframes navGradient {
+    0% { background-position: 100% 50%; } /* start opposite direction */
+    50% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #FFD700;
+}
+
+    /* Main content */
+    .container{
+        width:80%;
+        margin:auto;
+        padding:20px;
+    }
+
+    .section{
+        background:white;
+        padding:25px;
+        margin-top:20px;
+        border-radius:8px;
+        box-shadow:0 0 10px rgba(0,0,0,0.1);
+    }
+
+    ul{
+        line-height:1.8;
+    }
+
+    .footer{
+        text-align:center;
+        padding:20px;
+        color:gray;
+    }
+
+    /* Social Icons Flexbox Top & Bottom */
+    .social-icons {
+        display:flex;
+        justify-content:flex-end;
+        gap:10px;
+        margin:10px 0;
+    }
+
+    /* Mobile-friendly header */
+    @media (max-width: 768px) {
+        .header-content {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .header-logo {
+            margin: 0 0 15px 0;
+            width: 100px;
+        }
+
+        .header-text h1 {
+            font-size: 32px;
+        }
+
+        .header-text p {
+            font-size: 16px;
+        }
+    }
+/* This piece of code makes Resume  Cover Letter   Portfolio   CV   VCard higlighted yellow when the cursor is on top of the words. */
+         .menu-link {
+        color: #FFD700;
+        text-decoration: none;
+    }
+
+    .menu-link:hover {
+        color: #FFD700;
+    }
+        
+  </style>
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="header-content">
+        <img src="ScreenShoot2.png" alt="Rene Hernandez Ambriz" class="header-logo">
+        <div class="header-text">
+            <h1>Rene Hernandez Ambriz</h1>
+            <p>Developer | Designer | Science-Driven Problem Solver</p>
+            <br>
+                <pre>
+                <a href="resume.html" class="menu-link">Resume</a>    Cover Letter    Portfolio    CV    VCard    <a href="index.html" class="menu-link">Home</a>
+            </pre>             <h1>Resume</h1>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#licenses">Licenses</a>
+    <a href="#contact">Contact</a>
+    <a href="index.html">Home</a>
+
+</nav>
+
+<!-- Social Icons Top Right -->
+<div class="social-icons">
+    <a href="https://www.linkedin.com/in/rene-hernandez-a-" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="40">
+    </a>
+    <a href="https://www.facebook.com/rene.herna.a" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" width="40">
+    </a>
+    <a href="https://www.instagram.com/w.wh.w/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="40">
+    </a>
+    <a href="https://www.threads.net/@w.wh.w" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968964.png" alt="Threads" width="40">
+    </a>
+    <a href="https://www.pinterest.com/reneh1571" target="_blank" style="float:right; margin-right:145px;">
+        <img src="https://cdn-icons-png.flaticon.com/512/145/145808.png" alt="Pinterest" width="40">
+    </a>
+</div>
+
+<div class="container">
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            Professional contractor with strong analytical skills and a background in mathematics and physics.
+            Experienced in construction planning, project execution, and problem solving.
+        </p>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <ul>
+            <li>Project 1</li>
+            <li>Project 2</li>
+            <li>Project 3 etc.</li>
+        </ul>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <ul>
+            <li>Construction Project Management</li>
+            <li>Roofing and Structural Work</li>
+            <li>Mathematics and Analytical Thinking</li>
+            <li>Basic Programming (Java, C++)</li>
+            <li>Problem Solving and Engineering Thinking</li>
+            <li>Bilingual: English/Spanish</li>
+        </ul>
+    </section>
+
+    <section id="education" class="section">
+        <h2>Education</h2>
+        <ul>
+            <li>Bachelor of Science in Pure Mathematics / University of California Davis</li>
+            <li>Associate of Science in Physics / College of San Mateo, Skyline College</li>
+            <li>Associate of Science in Mathematics / College of San Mateo, Skyline College</li>
+            <li>College IGETC (Intersegmental General Education Transfer Curriculum)</li>
+            <li>College GE (General Education)</li>
+        </ul>
+    </section>
+
+    <section id="licenses" class="section">
+        <h2>Licenses</h2>
+        <ul>
+            <li>#### ###</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Email: your@email.com</p>
+        <p>Phone: (000) 000-0000</p>
+    </section>
+</div>
+
+<div class="footer">
+    <p>© 2026 Rene Hernandez</p>
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/rene-hernandez-a-" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="40">
+        </a>
+        <a href="https://www.facebook.com/rene.herna.a" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" width="40">
+        </a>
+        <a href="https://www.instagram.com/w.wh.w/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="40">
+        </a>
+        <a href="https://www.threads.net/@w.wh.w" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968964.png" alt="Threads" width="40">
+        </a>
+        <a href="https://www.pinterest.com/reneh1571" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/145/145808.png" alt="Pinterest" width="40">
+        </a>
+    </div>
+</div>
