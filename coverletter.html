@@ -163,14 +163,23 @@ nav a:hover {
         }
     }
 /* This piece of code makes Resume  Cover Letter   Portfolio   CV   VCard higlighted yellow when the cursor is on top of the words. */
-         .menu-link {
-        color: #FFD700;
-        text-decoration: none;
+    .menu-links{
+         display: flex;
+         flex-wrap;
+        gap: 15px;
+    } 
+    .menu-link {
+    color: white;
+     text-decoration: none;
     }
 
     .menu-link:hover {
         color: #FFD700;
     }
+    resume-title {
+        color: #FFD700;
+    }
+        
         
   </style>
 </head>
@@ -184,9 +193,10 @@ nav a:hover {
             <h1>Rene Hernandez Ambriz</h1>
             <p>Developer | Designer | Science-Driven Problem Solver</p>
             <br>
-                <pre>
-                <pre href="resume.html" class="menu-link">Resume</pre>    Cover Letter    Portfolio    CV    VCard    <pre href="index.html" class="menu-link">Home</pre>
-            </pre>             <h1>Cover Letter</h1>
+                <div style="white-space: pre;">
+                <a href="resume.html" class="menu-link">Resume</a>  <a href="coverletter.html" class="menu-link">Cover Letter</a>  <a href="portfolio.html" class="menu-link">Portfolio</a>  <a href="cv.html" class="menu-link">CV</a>  <a href="vcard.html" class="menu-link">VCard</a>  <a href="index.html" class="menu-link">Home</a>      
+                </div>
+                <h1 style="color:#FFD700; text-align:center;">Resume</h1>        
         </div>
     </div>
 </header>
